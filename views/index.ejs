@@ -72,9 +72,20 @@
             </form>            
         <hr>
         <h2>Articles</h2>
-            <% articles.forEach(article => { %>
-                    <a href="/article/<%= article.id %>"><%= article.title %></a>
-            <% }) %>
+        <% 
+            const seenTitles = new Set(); 
+            const uniqueArticles = articles.filter(article => {
+                if (seenTitles.has(article.title)) {
+                    return false;
+                }
+                seenTitles.add(article.title);
+                return true;
+            });
+        %>
+        <% uniqueArticles.forEach(article => { %>
+            <a href="/article/<%= article.id %>"><%= article.title %></a>
+        <% }) %>
+        
         <hr>
         <time></time>
     </div>
