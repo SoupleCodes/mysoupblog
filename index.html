@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+   "http://www.w3.org/TR/html4/frameset.dtd">
+<HTML>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my little blog site</title>
+    <style>
+        body {
+            font-family: serif;
+            background: white;
+            padding: 0;
+        }
+        textarea {
+          width: 1075px;
+          resize: vertical;
+        }
+        h1 {
+            color: #333;
+        }
+        .article-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .article-list li {
+            background: #fff;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .article-list a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .article-list a:hover {
+            text-decoration: underline;
+        }
+        .form-container input,
+        .form-container textarea,
+        .form-container button {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button.form-container {
+          width: 100%
+        }
+    </style>
+    <link rel="icon"
+          type="image/gif"
+          href="/public/icon.gif">
+</head>
+<FRAMESET rows="80, *">
+    <FRAME src="public/frame/header.htm" scrolling="no" noresize>
+    <FRAMESET cols="150, *">
+    <FRAMESET rows="80, 400" marginwidth="0" marginheight="0" scrolling="no" noresize="">
+        <FRAME scrolling="no" src="public/frame/corner.htm">
+        <FRAME src="public/frame/left.htm">
+    </FRAMESET>
+    <FRAME src="public/frame/main.htm">
+    </FRAMESET>
+</FRAMESET>
+</HTML>
