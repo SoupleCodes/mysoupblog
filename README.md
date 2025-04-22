@@ -1,2 +1,2 @@
 # mysoupblog
-A little site with a mix of blogs, little projects, and more!# wikiverse
+A little site with a mix of blogs, little projects, and more!
